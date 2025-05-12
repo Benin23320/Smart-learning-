@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
-import Register from './components/Register';
-import LoginPage from './components/LoginPage';
-import AboutPage from './components/AboutPage';
-import ContactPage from './components/ContactPage';
-import Dashboard from './components/Dashboard';
+import Navbar from './components/LandingPage/Navbar';
+import HeroSection from './components/LandingPage/HeroSection';
+import Footer from './components/LandingPage/Footer';
+import Register from './components/Auth/Register';
+import LoginPage from './components/Auth/LoginPage';
+import AboutPage from './components/LandingPage/AboutPage';
+import ContactPage from './components/LandingPage/ContactPage';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function AppContent() {
   const location = useLocation();
@@ -35,7 +35,7 @@ function AppContent() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
     </div>

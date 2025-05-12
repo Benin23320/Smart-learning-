@@ -2,7 +2,7 @@ export const content = ['./src/**/*.{js,jsx,ts,tsx}'];
 export const theme = {
   extend: {
     colors: {
-      primary: '#e1e5f8', // Set plain #e1e5f8 as the primary background color
+      primary: '#f2faff', // Set plain #e1e5f8 as the primary background color
       accent: '#001f54', // Accent color
       mathew: '#1b56fd', // Lighter shade for the fade effect
     },
