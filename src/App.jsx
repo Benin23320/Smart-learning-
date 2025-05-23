@@ -8,12 +8,13 @@ import LoginPage from './components/Auth/LoginPage';
 import AboutPage from './components/LandingPage/AboutPage';
 import ContactPage from './components/LandingPage/ContactPage';
 import Dashboard from './components/Dashboard/Dashboard';
+import StaffDashboard from './components/Dashboard/StaffDashboard';
 
 function AppContent() {
   const location = useLocation();
 
   // Define routes where Navbar and Footer should not be shown
-  const hideNavbarFooterRoutes = ['/Dashboard'];
+  const hideNavbarFooterRoutes = ['/Dashboard', '/StaffDashboard'];
 
   return (
     <div className="font-sans">
@@ -36,6 +37,7 @@ function AppContent() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/staffdashboard" element={<StaffDashboard />} />
       </Routes>
 
     </div>
